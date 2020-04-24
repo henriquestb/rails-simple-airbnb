@@ -1,0 +1,109 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import "font-awesome-sprockets";
+@import "font-awesome";
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-bottom: 16px;
+}
+.edit_card{
+  margin: 16px;
+  padding: 16px;
+box-shadow: 1px 1px rgba(200,200,200,1);
+}
+._l2ulkt8 {
+    position: relative !important;
+    text-align: right !important;
+}
+._1fwiw8gv {
+    -webkit-box-pack: end !important;
+    -webkit-box-align: center !important;
+    align-items: center !important;
+    color: rgb(34, 34, 34) !important;
+    display: flex !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    justify-content: flex-end !important;
+}
+._1p7iugi {
+    font-weight: 800 !important;
+}
+._krjbj {
+    border: 0px !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(100%) !important;
+    clip-path: inset(100%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0px !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 1px !important;
+}
+
+.card-category{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 0 5 15px rgba(0,0,0,0.1);
+  height: 250px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+  background-position: center;
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+.flexpower {
+  padding: 16px;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.color {
+  color: red;
+}
+h2, p {
+  color: black;
+}
+a:link, a:hover, a:visited {
+  text-decoration: none;
+}

@@ -1,0 +1,38 @@
+<div class="flexpower">
+<h1>All Flats</h1>
+<%= link_to 'Adicionar', new_flat_path, class: 'btn btn-primary' %>
+</div>
+<div class="row">
+  <% @flats.each do |flat| %>
+    <div class="col-4">
+      <%= link_to flat_path(flat) do %>
+        <div class="card-trip">
+          <img src="https://source.unsplash.com/random?sig=<%= flat.id %>"/>
+          <div class="card-trip-infos" >
+            <div>
+              <h2><%= flat.name %></h2>
+              <p><%= flat.address %></p>
+            </div>
+            <div class="flexpower">
+              <h2 class="pr-3 color"><i class="fas fa-user"></i><%= flat.number_of_guests %></h2>
+              <div class="_l2ulkt8"><div class="_1fwiw8gv"><span><span class="_1p7iugi"><span class="_krjbj">Price:</span><%= flat.price_per_night %></span> / night</span></div></div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
+<tbody>
+    <% @flats.each do |flat| %>
+      <tr>
+        <td><%= flat.name %></td>
+        <td><%= flat.address %></td>
+        <td><%= flat.description %></td>
+        <td><%= link_to 'Show', flat %></td>
+        <td><%= link_to 'Edit', edit_flat_path(flat) %></td>
+        <td><%= link_to 'Destroy', flat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>

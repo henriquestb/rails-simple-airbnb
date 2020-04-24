@@ -1,0 +1,58 @@
+<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-8">
+    <div class="card edit_card">
+    <p>
+      <strong><%= @flat.name %></strong>
+    </p>
+    </div>
+    <div class="card edit_card">
+    <p>
+      <%= @flat.address %>
+    </p>
+    </div>
+    <div class="card edit_card">
+    <p>
+      <strong>A bit more about us:</strong>
+      <%= @flat.description %>
+    </p>
+    </div>
+     <div class="card edit_card">
+     <p>
+      <strong>Details:</strong>
+      <%= @flat.number_of_guests %>
+      <%= @flat.price_per_night %>
+    </p>
+    </div>
+  </div>
+  <div class="col-4">
+    <form>
+  <fieldset>
+    <div class="form-group">
+      <label for="disabledTextInput">Disabled input</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+    </div>
+    <div class="form-group">
+      <label for="disabledSelect">Disabled select menu</label>
+      <select id="disabledSelect" class="form-control">
+        <option>Disabled select</option>
+      </select>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+      <label class="form-check-label" for="disabledFieldsetCheck">
+        Can't check this
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+  </div>
+</div>
+<%= link_to 'Edit', edit_flat_path(@flat) %> |
+<%= link_to 'Back', flats_path %>
+<%= link_to flat_path(@flat), method: :delete, data: {:confirm => "You sure?" } do  %>
+      <i class="fas fa-trash"></i>
+<% end %>
+
+
